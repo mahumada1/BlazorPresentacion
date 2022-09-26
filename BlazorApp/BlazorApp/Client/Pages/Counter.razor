@@ -1,0 +1,59 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<TelerikTileLayout Columns="3"
+                   RowHeight="350px"
+                   ColumnWidth="33%"
+                   Reorderable="true"
+                   Resizable="true">
+    <TileLayoutItems>
+        <TileLayoutItem HeaderText="Titulo 1" RowSpan="1" ColSpan="1">
+            <Content>
+                @if (!AgregarNuevoRegistro)
+                {
+                    <TelerikButton OnClick="@Toggle" Icon="plus">Agregar nueva tarea</TelerikButton>
+                }
+            </Content>
+        </TileLayoutItem>
+        <TileLayoutItem HeaderText="Titulo 1" RowSpan="1" ColSpan="1">
+            <Content>
+                @if (!AgregarNuevoRegistro)
+                {
+                    <TelerikButton OnClick="@Toggle" Icon="plus">Agregar nueva tarea</TelerikButton>
+                }
+            </Content>
+        </TileLayoutItem>
+        <TileLayoutItem HeaderText="Titulo 1" RowSpan="1" ColSpan="1">
+            <Content>
+                @if (!AgregarNuevoRegistro)
+                {
+                    <TelerikButton OnClick="@Toggle" Icon="plus">Agregar nueva tarea</TelerikButton>
+                }
+            </Content>
+        </TileLayoutItem>
+    </TileLayoutItems>
+</TelerikTileLayout>
+
+
+@code {
+    private int currentCount = 0;
+
+    public bool AgregarNuevoRegistro { get; set; } = false;
+
+    public void Toggle()
+    {
+        AgregarNuevoRegistro ^= true;
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

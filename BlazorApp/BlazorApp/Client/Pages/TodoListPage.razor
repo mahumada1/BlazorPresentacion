@@ -1,0 +1,36 @@
+﻿@page "/todolist"
+
+<h3>TodoListPage</h3>
+
+
+<TelerikTileLayout Columns="3"
+                       RowHeight="450px"
+                       ColumnWidth="33%"
+                       Reorderable="true"
+                       Resizable="true"
+                       OnResize="ItemResize">
+        <TileLayoutItems>
+            @foreach (var grupo in ListadoGrupos)
+            {
+            <TileLayoutItem RowSpan="1" ColSpan="1">
+                <HeaderTemplate>
+                    <div class="k-hbox" style="justify-content: stretch">
+                        <div>
+                            @($"({grupo.Id}) {grupo.Nombre}")
+                        </div>
+                        <div>
+                            @($"|{grupo.Total}/{grupo.Pendientes}|")
+                        </div>
+                        <span>
+                            <TelerikButton Icon="close" Title="Borrar Grupo" Class="k-flat" OnClick="@(() => RemoveTodoGroup(grupo.Id))"></TelerikButton>
+                        </span>
+                    </div>
+                </HeaderTemplate>
+                <Content>
+                    <TodoGroupComponent ItemGrupo="grupo" OnTodoItemsUpdateInfo="ActualizarItems" />
+                </Content>
+            </TileLayoutItem>
+            }
+        </TileLayoutItems>
+
+</TelerikTileLayout>

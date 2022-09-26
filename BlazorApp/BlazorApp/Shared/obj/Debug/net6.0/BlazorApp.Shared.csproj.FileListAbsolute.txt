@@ -1,0 +1,12 @@
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\bin\Debug\net6.0\BlazorApp.Shared.deps.json
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\bin\Debug\net6.0\BlazorApp.Shared.dll
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\bin\Debug\net6.0\BlazorApp.Shared.pdb
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.csproj.AssemblyReference.cache
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.AssemblyInfoInputs.cache
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.AssemblyInfo.cs
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.csproj.CoreCompileInputs.cache
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.dll
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\obj\Debug\net6.0\refint\BlazorApp.Shared.dll
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.pdb
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Shared\obj\Debug\net6.0\ref\BlazorApp.Shared.dll

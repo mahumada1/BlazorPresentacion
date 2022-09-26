@@ -1,0 +1,30 @@
+﻿@if (!AgregarNuevoRegistro)
+{
+    <TelerikButton OnClick="@Toggle" Icon="plus">Agregar nueva tarea</TelerikButton>
+}
+
+@*<div class="mt-sm text kd-border" style="position: relative; height: 200px;">
+                    <TelerikAnimationContainer @ref="@AnimationContainer" Top="5px" Left="5px" Width="97%" Height="200px" AnimationType="@AnimationType.SlideDown" Class="k-popup">
+                    <label for="titulo">Titulo</label>
+                    <TelerikTextBox PlaceHolder="Agregar titulo tarea" Id="titulo" Width="150px" @bind-Value="@Titulo"></TelerikTextBox>
+                    </TelerikAnimationContainer>
+                    </div>*@
+
+
+
+@if (AgregarNuevoRegistro)
+{
+    <label for="titulo">Titulo</label>
+    <TelerikTextBox PlaceHolder="Agregar titulo tarea" Id="titulo" Width="150px" @bind-Value="@Titulo"></TelerikTextBox>
+    <br />
+    <TelerikButton OnClick="@ConfirmarTarea" ThemeColor="@ThemeConstants.Button.ThemeColor.Success">Agregar Tarea</TelerikButton>
+    <TelerikButton OnClick="@Toggle" ThemeColor="@ThemeConstants.Button.ThemeColor.Error">Cancelar</TelerikButton>
+}
+
+@foreach(var item in ItemGrupo.Items)
+{
+    <p>@item.Titulo</p>
+}
+
+
+

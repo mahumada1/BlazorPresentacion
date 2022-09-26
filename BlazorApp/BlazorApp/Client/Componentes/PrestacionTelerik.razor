@@ -1,0 +1,23 @@
+﻿
+<h3>PrestacionTelerik</h3>
+
+
+<TelerikGrid Data="@ListadoPrestaciones" Height="100%" @bind-PageSize="@PageSize" 
+            @bind-Page="@CurrentPage" Pageable="true" Sortable="true" Resizable="true" 
+            Reorderable="true" Groupable="true" ShowColumnMenu="true" SelectionMode="GridSelectionMode.Multiple">
+
+    <GridSettings>
+        <GridPagerSettings InputType="PagerInputType.Buttons" PageSizes="@PageSizes" ButtonCount="5" />
+    </GridSettings>
+
+    <GridColumns>
+        <GridCheckboxColumn ShowColumnMenu="true" Lockable="false" />
+        <GridColumn Field="Id" Title="Id" />
+        <GridColumn Field="Codigo" Title="Codigo" />
+        <GridColumn Field="Nombre" Title="Nombre" />
+        <GridColumn Field="Area.Nombre" Title="Area"/>
+        <GridColumn Field="Especialidad.Descripcion" Title="Especialidad"/>
+        <GridColumn Field="EsProcesable" Title="Procesable"/>
+        <GridColumn Field="Activo" Title="Activo"/>
+    </GridColumns>
+</TelerikGrid>

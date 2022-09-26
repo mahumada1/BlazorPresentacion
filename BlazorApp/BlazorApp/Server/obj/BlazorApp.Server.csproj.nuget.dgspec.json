@@ -1,0 +1,362 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Server\\BlazorApp.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Core\\proactive.Core.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Core\\proactive.Core.csproj",
+        "projectName": "proactive.Core",
+        "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Core\\proactive.Core.csproj",
+        "frameworks": {
+          "net452": {
+            "projectReferences": {
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Domain\\proactive.Domain.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Domain\\proactive.Domain.csproj"
+              },
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj"
+              },
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Data\\proactive.Data.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Data\\proactive.Data.csproj",
+        "projectName": "proactive.Data",
+        "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Data\\proactive.Data.csproj",
+        "frameworks": {
+          "net452": {
+            "projectReferences": {
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj"
+              },
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Domain\\proactive.Domain.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Domain\\proactive.Domain.csproj",
+        "projectName": "proactive.Domain",
+        "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Domain\\proactive.Domain.csproj",
+        "frameworks": {
+          "net452": {
+            "projectReferences": {
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Data\\proactive.Data.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Data\\proactive.Data.csproj"
+              },
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj"
+              },
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj",
+        "projectName": "proactive.DTO",
+        "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj",
+        "frameworks": {
+          "net452": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj",
+        "projectName": "proactive.Global",
+        "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj",
+        "frameworks": {
+          "net452": {
+            "projectReferences": {
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\BlazorApp.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\BlazorApp.Client.csproj",
+        "projectName": "BlazorApp.Client",
+        "projectPath": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\BlazorApp.Client.csproj",
+        "packagesPath": "C:\\Users\\manue\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\manue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\GIT\\Resources": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Software\\Telerik\\Blazor\\Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Core\\proactive.Core.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Core\\proactive.Core.csproj"
+              },
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj"
+              },
+              "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Shared\\BlazorApp.Shared.csproj": {
+                "projectPath": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Shared\\BlazorApp.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Telerik.UI.for.Blazor": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.8, 6.0.8]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Server\\BlazorApp.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Server\\BlazorApp.Server.csproj",
+        "projectName": "BlazorApp.Server",
+        "projectPath": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Server\\BlazorApp.Server.csproj",
+        "packagesPath": "C:\\Users\\manue\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\manue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\GIT\\Resources": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Software\\Telerik\\Blazor\\Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Domain\\proactive.Domain.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Domain\\proactive.Domain.csproj"
+              },
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.DTO\\proactive.DTO.csproj"
+              },
+              "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj": {
+                "projectPath": "C:\\GIT\\GitProactive\\Desarrollo\\proactive\\proactive.Global\\proactive.Global.csproj"
+              },
+              "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\BlazorApp.Client.csproj": {
+                "projectPath": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\BlazorApp.Client.csproj"
+              },
+              "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Shared\\BlazorApp.Shared.csproj": {
+                "projectPath": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Shared\\BlazorApp.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Shared\\BlazorApp.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Shared\\BlazorApp.Shared.csproj",
+        "projectName": "BlazorApp.Shared",
+        "projectPath": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Shared\\BlazorApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\manue\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\manue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\GIT\\Resources": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Software\\Telerik\\Blazor\\Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+﻿<h3>PrestacionHtml</h3>
+
+
+<table>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Codigo</th>
+			<th>Nombre</th>
+			<th>Area</th>
+			<th>Especialidad</th>
+			<th>Procesable</th>
+			<th>Activa</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in ListadoPrestaciones)
+		{
+			<tr>
+				<td>@item.Id</td>
+				<td>@item.Codigo</td>
+				<td>@item.Nombre</td>
+				<td>@item.Area?.Nombre</td>
+				<td>@item.Especialidad?.Descripcion</td>
+				<td>@item.EsProcesable</td>
+				<td>@item.Activo</td>
+			</tr>
+		}
+	</tbody>
+
+</table>

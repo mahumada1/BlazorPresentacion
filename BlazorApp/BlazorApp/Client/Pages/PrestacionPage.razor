@@ -1,0 +1,40 @@
+﻿@page "/prestacion"
+@inject HttpClient Http
+
+<h3>Prestaciones</h3>
+
+@if(CargandoPrestaciones == true)
+{
+    <p>Cargando prestaciones ...</p>
+    <TelerikLoader Class="loader-indicator" Type="@LoaderType.ConvergingSpinner" Size="@ThemeConstants.Loader.Size.Large" ThemeColor="@ThemeConstants.Loader.ThemeColor.Primary"></TelerikLoader>
+}
+else
+{
+	<p>Prestaciones encontradas: @ListadoPrestaciones.Count</p>
+
+    <button onclick="@(()=> {ValorRadio = 1;})" >TablaHtml</button>
+    <button onclick="@(()=> {ValorRadio = 2;})">TablaHtmlVirtual</button>
+    <button onclick="@(()=> {ValorRadio = 3;})">TablaTelerik</button>
+
+
+    <p>Opción Seleccionada: @ValorRadio</p>
+
+    @if (ValorRadio == 1)
+    {
+        <PrestacionHtml ListadoPrestaciones="@ListadoPrestaciones" />
+    }
+
+    @if (ValorRadio == 2)
+    {
+        <PrestacionHtmlVirtual ListadoPrestaciones="@ListadoPrestaciones" />
+    }
+
+    @if(ValorRadio == 3)
+    {
+        <PrestacionTelerik ListadoPrestaciones="@ListadoPrestaciones" />
+    }
+    
+
+}
+
+
