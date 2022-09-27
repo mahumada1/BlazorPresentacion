@@ -13,7 +13,8 @@ namespace BlazorApp.Shared
         public string Descripcion { get; set; }
         public bool Activo { get; set; }
         public List<TodoItem>? Items { get; set; }
-        public int? Total => Items?.Count();
-        public int? Pendientes => Items?.Count(p=> p.Pendiente == true);
+        public int? Total => Items?.Count(a=> a.Activo);
+        public int? Pendientes => Items?.Count(p=> p.Pendiente == true && p.Activo);
+        
     }
 }

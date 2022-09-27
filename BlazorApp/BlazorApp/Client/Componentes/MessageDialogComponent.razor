@@ -1,0 +1,18 @@
+﻿
+<TelerikDialog @bind-Visible="@Context.Visible"
+               Width="@Context.Width"
+               ShowCloseButton="@Context.MostrarCloseButton"
+               ButtonsLayout="@DialogButtonsLayout.End">
+    <DialogTitle>
+        <TelerikIcon Icon="@Context.Icon"></TelerikIcon> <span style="margin-left: 8px">@Context.Titulo</span>
+    </DialogTitle>
+    <DialogContent>
+        @ChildContent
+    </DialogContent>
+    <DialogButtons>
+        @foreach (var btn in Context.ListadoBotones)
+        {
+            <TelerikButton OnClick="@btn.EventoBoton" ThemeColor="@btn.ColorBoton">@btn.TituloBoton</TelerikButton>
+        }        
+    </DialogButtons>
+</TelerikDialog>

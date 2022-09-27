@@ -1037,3 +1037,7 @@ C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Client\obj\Debug\net6.0
 C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Client\obj\Debug\net6.0\build-gz\DFQXLKYi.gz
 C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Client\obj\Debug\net6.0\build-gz\hLxmZiFi.gz
 C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Client\obj\Debug\net6.0\build-gz\Fj1Hidyu.gz
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.LocalStorage.dll
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Client\bin\Debug\net6.0\Blazored.LocalStorage.dll
+C:\GIT\GitPruebas\BlazorPresentacion\BlazorApp\BlazorApp\Client\obj\Debug\net6.0\build-gz\7FByztxH.gz

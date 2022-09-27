@@ -1,6 +1,11 @@
 ﻿@page "/todolist"
 
 <h3>TodoListPage</h3>
+<div style="width: 300px">
+    <TelerikTextBox PlaceHolder="Nombre Grupo" @bind-Value="@NombreGrupo" />
+    <TelerikButton OnClick="@AgregarGrupo">Agregar Grupo</TelerikButton>
+    <TelerikButton OnClick="@RecuperarRegistros">Recuperar Registros</TelerikButton>
+</div>
 
 
 <TelerikTileLayout Columns="3"
@@ -12,25 +17,40 @@
         <TileLayoutItems>
             @foreach (var grupo in ListadoGrupos)
             {
-            <TileLayoutItem RowSpan="1" ColSpan="1">
-                <HeaderTemplate>
-                    <div class="k-hbox" style="justify-content: stretch">
-                        <div>
-                            @($"({grupo.Id}) {grupo.Nombre}")
-                        </div>
-                        <div>
-                            @($"|{grupo.Total}/{grupo.Pendientes}|")
-                        </div>
-                        <span>
-                            <TelerikButton Icon="close" Title="Borrar Grupo" Class="k-flat" OnClick="@(() => RemoveTodoGroup(grupo.Id))"></TelerikButton>
-                        </span>
-                    </div>
-                </HeaderTemplate>
-                <Content>
-                    <TodoGroupComponent ItemGrupo="grupo" OnTodoItemsUpdateInfo="ActualizarItems" />
-                </Content>
-            </TileLayoutItem>
+                @if(grupo.Activo)
+                {
+                    <TileLayoutItem RowSpan="1" ColSpan="1">
+                        <HeaderTemplate>
+                            <TelerikGridLayout RowSpacing="5px" ColumnSpacing="10px" Class="grid-layout">
+                                <GridLayoutColumns>
+                                    <GridLayoutColumn Width="75%"></GridLayoutColumn>
+                                    <GridLayoutColumn Width="15%"></GridLayoutColumn>
+                                    <GridLayoutColumn Width="20px"></GridLayoutColumn>
+                                </GridLayoutColumns>
+                                <GridLayoutItems>
+                                    <GridLayoutItem Row="1" Column="1">
+                                        <p style="font-size: 18px; font-weight: bold; margin-top: 2px;">@($"({grupo.Id}) {grupo.Nombre}")</p>
+                                    </GridLayoutItem>
+                                    <GridLayoutItem Row="1" Column="2">
+                                        <p style="font-size: 18px; font-weight: bold; margin-top: 2px;">@($"{grupo.Total}/{grupo.Pendientes}")</p>
+                                    </GridLayoutItem>
+                                    <GridLayoutItem Row="1" Column="3">
+                                        <TelerikButton OnClick="@(() => { RemoveTodoGroup(grupo.Id);})" Icon="x" ThemeColor="@ThemeConstants.Button.ThemeColor.Error" Size="@ThemeConstants.Button.Size.Small"></TelerikButton>
+                                    </GridLayoutItem>
+                                </GridLayoutItems>
+                            </TelerikGridLayout>
+                        </HeaderTemplate>
+                        <Content>
+                            <TodoGroupComponent ItemGrupo="grupo" OnTodoItemsUpdateInfo="ActualizarItems" />
+                        </Content>
+                    </TileLayoutItem>
+                }
             }
         </TileLayoutItems>
 
 </TelerikTileLayout>
+
+
+<MessageDialogComponent Context="@MessageContext">
+    @MessageContext.Mensaje
+</MessageDialogComponent>

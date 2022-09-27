@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bh53o8uDLcj6WJgsqNJmKFsuLWCIrWfwzUpTmKCfE0rixfB2MgdO0QfA6XU1JcgTJT72Md3GpTgKxuIi3trSLw==",
+  "dgSpecHash": "7W9Xhoe1laK7Vj13+GPi5Ej+NnPrsqVmbKZZAtrNU4rNytn1U0J8epQp3usCdnpffGHIfCmpKVG0jeyiiIbWng==",
   "success": true,
   "projectFilePath": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\BlazorApp.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\manue\\.nuget\\packages\\blazored.localstorage\\4.3.0-preview.1\\blazored.localstorage.4.3.0-preview.1.nupkg.sha512",
     "C:\\Users\\manue\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
     "C:\\Users\\manue\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.8\\microsoft.aspnetcore.components.6.0.8.nupkg.sha512",
     "C:\\Users\\manue\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.8\\microsoft.aspnetcore.components.analyzers.6.0.8.nupkg.sha512",

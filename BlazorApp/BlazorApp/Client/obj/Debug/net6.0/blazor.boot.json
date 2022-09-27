@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.LocalStorage.dll": "sha256-ynWr+ZcBLEcrLhC1IDSEoqOWRIVbme3rVb1XXBJb6sE=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-UrVyaila4UaM9NG7wgfD9o+ih1r3xt3rq4W7Z+SCE3w=",
       "Microsoft.AspNetCore.Components.dll": "sha256-8yq2GCAfNZmhru8HZW\/xr9jDHwAS+MD4B1GGQFzi2Pg=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-I5BEosbTOX5zg7agqWZo14z3aViOJYbMCWeRLInDYiQ=",
@@ -201,7 +202,7 @@
       "mscorlib.dll": "sha256-TYLzIm125RbnX9+RAPqJnwZhd6CnQpJcrjiMpJfZ720=",
       "netstandard.dll": "sha256-HhuK9zDkd1N7hODAEiNJ11VF8T54IgrM6hZfLHmHdqM=",
       "System.Private.CoreLib.dll": "sha256-dXaTqyg1PnXPiSwywpic1PVrd7P8Vb5tN0i0\/urdt3E=",
-      "BlazorApp.Shared.dll": "sha256-MJtMTPT1RxXe0PWfZOT5BGrRnGzbk8IR0GHYWdtIoRU=",
+      "BlazorApp.Shared.dll": "sha256-iWZRWibrDaxR6PrJ4OM7JiXzeYegBLkn5CP2NIgv51k=",
       "proactive.Core.dll": "sha256-2T1cGpI0nRv9VdoR8+Pz5ku0SJvHmM3\/s4CQJjOI+rA=",
       "proactive.Data.dll": "sha256-HOfoNgtTkf\/JWAXIOLpglESppc8\/4fQS17DMFw8muHU=",
       "proactive.Domain.dll": "sha256-ZKI\/ZOVYcBh1SiebeGFf673oiku0y+iaD8ViMQ9HpHs=",
@@ -233,7 +234,7 @@
       "ExcelDataReader.DataSet.dll": "sha256-psiBU4wfpUbJxmD6JqL31nw+5BVamxZsMedAftxtvHI=",
       "Telerik.Windows.Controls.Pivot.dll": "sha256-xXk7eWH6+T5DLt8QzVp\/0O3XlOotzQ4\/nPmxZk2isnA=",
       "Telerik.Windows.Zip.dll": "sha256-XJ67ylM1Rx9lborozmASqHNgmbdhlePNXyE5vRVg2Xs=",
-      "BlazorApp.Client.dll": "sha256-m3MVGqJcsbay6lODr4z9K0mZhhhEQbJ9qw44uVn5XcI="
+      "BlazorApp.Client.dll": "sha256-nZmZi0YGT9J6HBJ8\/duih\/39t0WUFq5+TMWD26UvSZc="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -241,7 +242,7 @@
     "pdb": {
       "proactive.Core.pdb": "sha256-b7yNvzSbvtKS70sKOqudRG0JzH0Wt7qdk+mzUTk0F\/8=",
       "proactive.DTO.pdb": "sha256-2G6pydworEJaJpBdSFF0VlqqaPWoemX587HzZ3HR1yQ=",
-      "BlazorApp.Shared.pdb": "sha256-4EF52SLfiixZjgFTeSf\/S0BzKzek0E\/XlQ5l8BK4LJw=",
+      "BlazorApp.Shared.pdb": "sha256-f7HueXWSUuaRxaud7CGM\/6aj812VXm36J+OX+Uc7u6w=",
       "proactive.Data.pdb": "sha256-3on4v0pl0eQLnkrRmVgvDNV4XZupp9aR00MQYlyiBG4=",
       "proactive.Domain.pdb": "sha256-rBX7le3VaddNtMN4p1HglVqa5u8ayDKoksEAJ\/jm1Fo=",
       "proactive.Global.pdb": "sha256-kxjH5ASGTt1PQYggEYf1m3luOTJHOeE6IZhT4EUaM+A=",
@@ -249,7 +250,7 @@
       "Telerik.Reporting.pdb": "sha256-0rvTnPk5p7+CJmY212TSlycG7k0Gtef0AN3AO3rRPno=",
       "ExcelDataReader.pdb": "sha256-UnVcqhs40W6rUIDn2YtsVagZCw6hAi\/3cdGNCE5Zqjc=",
       "ExcelDataReader.DataSet.pdb": "sha256-lHZ6Mm6EqE9+GQISV+anzUq5IO7tLNSgG7K9L1IBYXA=",
-      "BlazorApp.Client.pdb": "sha256-XqjpYMy1oVonYanyD7YgZfftvp8tCBt5cv0agWoFo8M="
+      "BlazorApp.Client.pdb": "sha256-HOvb0aRpdZ0N8NNsm3y9J5A2J3XKkCBjTYP27UU07II="
     },
     "runtime": {
       "dotnet.6.0.8.qgfmgrt5e2.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XThN7IBQA5MaqeAxBMzhRgPfWpXSN7ALpo0p4nap51Y=",
+  "Hash": "XisKb0yfkaIbb4rLwZiDsWM8lVQhG0mwMzhoEJUphZA=",
   "Source": "BlazorApp.Server",
   "BasePath": "_content/BlazorApp.Server",
   "Mode": "Default",
@@ -129,6 +129,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Shared\\bin\\Debug\\net6.0\\BlazorApp.Shared.pdb"
+    },
+    {
+      "Identity": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "SourceId": "BlazorApp.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\manue\\.nuget\\packages\\blazored.localstorage\\4.3.0-preview.1\\lib\\net6.0\\Blazored.LocalStorage.dll"
     },
     {
       "Identity": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\de\\PdfSharp.resources.dll",
@@ -4940,6 +4957,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Mail.dll"
+    },
+    {
+      "Identity": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\obj\\Debug\\net6.0\\build-gz\\7FByztxH.gz",
+      "SourceId": "BlazorApp.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll"
     },
     {
       "Identity": "C:\\GIT\\GitPruebas\\BlazorPresentacion\\BlazorApp\\BlazorApp\\Client\\obj\\Debug\\net6.0\\build-gz\\7nQLPF7G.gz",

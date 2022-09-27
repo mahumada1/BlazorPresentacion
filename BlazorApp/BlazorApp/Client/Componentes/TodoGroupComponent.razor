@@ -1,30 +1,77 @@
-﻿@if (!AgregarNuevoRegistro)
-{
+﻿
+<div>
     <TelerikButton OnClick="@Toggle" Icon="plus">Agregar nueva tarea</TelerikButton>
-}
-
-@*<div class="mt-sm text kd-border" style="position: relative; height: 200px;">
-                    <TelerikAnimationContainer @ref="@AnimationContainer" Top="5px" Left="5px" Width="97%" Height="200px" AnimationType="@AnimationType.SlideDown" Class="k-popup">
-                    <label for="titulo">Titulo</label>
-                    <TelerikTextBox PlaceHolder="Agregar titulo tarea" Id="titulo" Width="150px" @bind-Value="@Titulo"></TelerikTextBox>
-                    </TelerikAnimationContainer>
-                    </div>*@
+    <TelerikCheckBox @bind-Value="@VerTareasEliminadas" Id="checkEliminadas"></TelerikCheckBox>
+    <label id="checkEliminadas">Ver Tareas Eliminadas</label>
+</div>
 
 
 
-@if (AgregarNuevoRegistro)
-{
-    <label for="titulo">Titulo</label>
-    <TelerikTextBox PlaceHolder="Agregar titulo tarea" Id="titulo" Width="150px" @bind-Value="@Titulo"></TelerikTextBox>
-    <br />
-    <TelerikButton OnClick="@ConfirmarTarea" ThemeColor="@ThemeConstants.Button.ThemeColor.Success">Agregar Tarea</TelerikButton>
-    <TelerikButton OnClick="@Toggle" ThemeColor="@ThemeConstants.Button.ThemeColor.Error">Cancelar</TelerikButton>
-}
+<div class="mt-sm text kd-border" style="position: relative; margin-left: 5px;">
+    <TelerikAnimationContainer @ref="@AnimationContainer" Top="2px" Left="2px" Width="97%" Height="300px" AnimationType="@AnimationType.SlideDown" Class="k-popup">
+        <div style="margin-left: 25px">
+            <br />
+            <label for="titulo">Titulo :</label>
+            <TelerikTextBox PlaceHolder="Agregar titulo tarea" Id="titulo" Width="90%" @bind-Value="@Titulo"></TelerikTextBox>
+            <br /><br />
+            <label for="descripcion">Descripcion :</label>
+            <TelerikTextArea Size="@ThemeConstants.TextArea.Size.Medium" PlaceHolder="Agregar descripción de la tarea" Id="descripcion" Width="90%" @bind-Value="@Descripcion"></TelerikTextArea>
+            <br /><br />
+            <label for="fecha">Fecha Vencimiento :</label>
+            <TelerikDatePicker PlaceHolder="Fecha vencimiento de la tarea" Id="fecha" Width="150px" @bind-Value="@FechaVencimiento"></TelerikDatePicker>
+            <br /><br />
+            <TelerikButton OnClick="@ConfirmarTarea" ThemeColor="@ThemeConstants.Button.ThemeColor.Success">Agregar Tarea</TelerikButton>
+            <TelerikButton OnClick="@Toggle" ThemeColor="@ThemeConstants.Button.ThemeColor.Error">Cancelar</TelerikButton>
+        </div>
+        
+    </TelerikAnimationContainer>
+</div>
+
+
+<br />
 
 @foreach(var item in ItemGrupo.Items)
 {
-    <p>@item.Titulo</p>
+    @if(item.Activo || VerTareasEliminadas)
+    {
+        <TelerikGridLayout RowSpacing="5px" ColumnSpacing="10px" Class="grid-layout">
+            <GridLayoutColumns>
+                <GridLayoutColumn Width="60%"></GridLayoutColumn>
+                <GridLayoutColumn Width="20%"></GridLayoutColumn>
+                <GridLayoutColumn Width="20px"></GridLayoutColumn>
+                <GridLayoutColumn Width="20px"></GridLayoutColumn>
+            </GridLayoutColumns>
+            <GridLayoutItems>
+                <GridLayoutItem Row="1" Column="1" ColumnSpan="3">
+                    <p style="font-size: 14px; font-weight: bold; margin-top: 2px; @(item.Pendiente?"":"text-decoration: line-through; color: red;") @(!item.Activo?"color: red;":"")">@(!item.Activo ? "(X)" : "") @item.Id - @item.Titulo</p>
+                </GridLayoutItem>
+                <GridLayoutItem Row="1" Column="2" ColumnSpan="3">
+                    <p style="font-size: 14px; margin-top: 2px; @(item.Pendiente?"":"text-decoration: line-through; color: red;")">(@item.FechaVencimiento.ToShortDateString())</p>
+                </GridLayoutItem>
+                <GridLayoutItem Row="1" Column="3" ColumnSpan="3">
+                    @if (item.Pendiente && item.Activo)
+                    {
+                        <TelerikButton OnClick="@(() => { CompletarTarea(item.Id);})" Icon="check" ThemeColor="@ThemeConstants.Button.ThemeColor.Success" Size="@ThemeConstants.Button.Size.Small"></TelerikButton>
+                    }
+                </GridLayoutItem>
+                <GridLayoutItem Row="1" Column="4" ColumnSpan="3">
+                    @if (item.Pendiente && item.Activo)
+                    {
+                        <TelerikButton OnClick="@(() => { EliminarTarea(item.Id);})" Icon="x" ThemeColor="@ThemeConstants.Button.ThemeColor.Error" Size="@ThemeConstants.Button.Size.Small"></TelerikButton>
+                    }
+                    else if (!item.Pendiente || (VerTareasEliminadas && !item.Activo))
+                    {
+                        <TelerikButton OnClick="@(() => { ReactivarTarea(item.Id);})" Icon="rotate" ThemeColor="@ThemeConstants.Button.ThemeColor.Light" Size="@ThemeConstants.Button.Size.Small"></TelerikButton>
+                    }
+                    
+                </GridLayoutItem>
+            </GridLayoutItems>
+        </TelerikGridLayout>
+    }
 }
 
+<MessageDialogComponent Context="@MessageContext">
+    @MessageContext.Mensaje
+</MessageDialogComponent>
 
 

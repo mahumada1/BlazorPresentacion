@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/GIT/GitPruebas/BlazorPresentacion/BlazorApp/BlazorApp/Client/Componentes/MessageDialogComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50ZXNcTWVzc2FnZURpYWxvZ0NvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GIT/GitPruebas/BlazorPresentacion/BlazorApp/BlazorApp/Client/Componentes/PrestacionHtml.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50ZXNcUHJlc3RhY2lvbkh0bWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
